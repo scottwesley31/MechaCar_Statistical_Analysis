@@ -56,3 +56,24 @@ Just like Lot 1, the p-value in this case is also small (0.0005911) which means 
 ![t-test_lot3](https://user-images.githubusercontent.com/107309793/192178839-d314e75f-f7a9-48b4-a8c9-ea2cfe45c98e.png)
 
 Lastly, the p-value for Lot 3 is 0.1589 which indicates that there is insufficient evidence to reject the null hypothesis. The Lot 3 mean is statistically similar to the population mean.
+
+### Study Design: MechaCar vs Competition
+
+This study design is under the assumption that additional data can be obtained for MechaCar performance (outside of the existing data from `MechaCar_mpg.csv` and `Suspension_Coil.csv`.
+
+#### What metric or metrics are you going to test?
+These are the metrics I would test which relate to car performance:
+- Horsepower (hp)
+- Quarter mile race time (qsec)
+- Breaking distance
+- Fuel economy (mpg)
+
+#### What is the null hypothesis and alternative hypothesis?
+**Null Hypothesis**
+There is no statistical difference between the MechaCar performance mean (hp, qsec, breaking distance, mpg) and competitor performance mean.
+**Alternative Hypothesis**
+There is a statistical difference between the MechaCar performance mean and the competitor performance mean.
+
+#### What statistical test would you use to test the hypothesis? And why?
+
+#### What data is needed to run the statistical test?
