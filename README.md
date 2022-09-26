@@ -22,9 +22,12 @@ In this case the reported r-squared value from this multiple linear regression i
 ### Summary Statistics on Suspension Coils
 
 Summary statistics of all suspension coils tested are included in the `total_summary` table below:
+
 ![total_summary](https://user-images.githubusercontent.com/107309793/192172150-e8f29992-edec-40f3-ba75-306fbefe96fc.png)
 
 The same set of summary statistics were then calculated for each manufacturing lot in the `lot_summary` table below:
+
 ![lot_summary](https://user-images.githubusercontent.com/107309793/192172200-1e75bb66-210f-4802-b631-b0767b49835a.png)
 
 #### The design specifications for the MechaCar suspension coils dictate that the variance of the suspension coils must not exceed 100 pounds per square inch. Does the current manufacturing data meet this design specification for all manufacturing lots in total and each lot individually? Why or why not?
+When looking at the summary statistics of the `total_summary` table, all of the suspension coils as a collective group do pass the design specifications at a variance < 100 PSI (~62.29 PSI). This is not the case when each manufacturing lot is considered. Despite having a similar mean and median to the other manufacturing lots, the overall PSI variance is well outside of design specifications (~170.29 PSI). It's high standard deviation value (13.05) also indicates a large spread of data.
