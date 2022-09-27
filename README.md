@@ -75,5 +75,11 @@ There is no statistical difference between the MechaCar performance mean (hp, qs
 There is a statistical difference between the MechaCar performance mean and the competitor performance mean.
 
 #### What statistical test would you use to test the hypothesis? And why?
+All of the metrics listed above are numeric and continuous because they are measurements. Each metric can be compared to it's counterpart between the two groups (i.e. MechaCar horsepower vs. competitor horsepower) meaning they are also dichotomous. Assuming that the MechaCar and competitor metrics are sampled randomly from a resonably large population dataset, a two-sample t-test would be appropriate to compare the distributions means of each corresponding metric.
+
+Prior to running the two-sample t-test for each metric, each sample would need to be checked for normal distribution. Each metric sample could be used to graph a density plot to better visualize the distribution. Then the Shapiro-Wilk test could be run to confirm a p-value larger than 0.05.
+
+Once the t-test results for each metric are run, the null hypotheses can either be rejected or supported allowing for an overall statistically supported comparison of performance between MechaCar and it's competitor. Looking objectively at the statistical differences between each sample mean would confirm which metrics are better (or not truly different) and therefore which population of cars perform better overall.
 
 #### What data is needed to run the statistical test?
+The datasets from both MechaCar and the competitor would need to be reasonably large since samples will be pulled randomly for all four metrics (hp, qsec, breaking distance, and mpg). The data should include unique values for vehicle IDs (or at least data associated with specific models) which would ensure duplicates are not randomly sampled into the statistical analysis step. I also feel that the dataset from each company should be comparable in size.
