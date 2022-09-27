@@ -70,14 +70,15 @@ These are the metrics I would test which relate to car performance:
 
 #### What is the null hypothesis and alternative hypothesis?
 **Null Hypothesis**
-There is no statistical difference between the MechaCar performance mean (hp, qsec, breaking distance, mpg) and competitor performance mean.
+There is no statistical difference between the MechaCar performance means (hp, qsec, breaking distance, mpg) and competitor performance means.
+
 **Alternative Hypothesis**
-There is a statistical difference between the MechaCar performance mean and the competitor performance mean.
+There is a statistical difference between the MechaCar performance means and the competitor performance means.
 
 #### What statistical test would you use to test the hypothesis? And why?
 All of the metrics listed above are numeric and continuous because they are measurements. Each metric can be compared to it's counterpart between the two groups (i.e. MechaCar horsepower vs. competitor horsepower) meaning they are also dichotomous. Assuming that the MechaCar and competitor metrics are sampled randomly from a resonably large population dataset, a two-sample t-test would be appropriate to compare the distributions means of each corresponding metric.
 
-Prior to running the two-sample t-test for each metric, each sample would need to be checked for normal distribution. Each metric sample could be used to graph a density plot to better visualize the distribution. Then the Shapiro-Wilk test could be run to confirm a p-value larger than 0.05.
+Prior to running the two-sample t-test for each metric, each sample would need to be checked for normal distribution. Each metric sample could be used to graph a density plot to better visualize the distribution. Then the Shapiro-Wilk test could be run on each metric to confirm a p-value larger than 0.05.
 
 Once the t-test results for each metric are run, the null hypotheses can either be rejected or supported allowing for an overall statistically supported comparison of performance between MechaCar and it's competitor. Looking objectively at the statistical differences between each sample mean would confirm which metrics are better (or not truly different) and therefore which population of cars perform better overall.
 
